@@ -1,0 +1,116 @@
+commit 30650279f204745dfd1853ba512b62636915940f
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 19:11:03 2018 +0200
+
+    muutoksia tehty
+
+ tiedostoja/file1  | 0
+ tiedostoja/file2  | 0
+ tiedostoja/file22 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 53056496990c4d4a06d1fd3e006771401275978f
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 18:54:42 2018 +0200
+
+    lisätty hakemisto ja 3 tiedostoa
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit fa8c7c3d24e77c2c82ae0b82b9ab55aedc63ba11
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 18:42:39 2018 +0200
+
+    muutoksia tehty
+
+ eka.txt    | 10 ++--------
+ kolmas.txt |  5 ++++-
+ 2 files changed, 6 insertions(+), 9 deletions(-)
+
+commit 02715406e72e44683254d358241923872d320c13
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 18:39:13 2018 +0200
+
+    tiedoston nimeä muutettu
+
+ eka.txt      | 15 +++++++++++++++
+ tiedosto.txt | 15 ---------------
+ 2 files changed, 15 insertions(+), 15 deletions(-)
+
+commit 48a2efc5599e87a0b076dda70bb56eee96f402e3
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 18:38:20 2018 +0200
+
+    tiedosto poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 2401bf060ff5d07f48845cd1ce8a53d4ff583338
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 18:34:20 2018 +0200
+
+    muokattu tiedostoa tiedosto.txt
+
+ tiedosto.txt | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+commit 0835cbd2efdbbacc95651778515888ec06f02b7f
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 18:30:35 2018 +0200
+
+    muokattu tiedostoa
+
+ tiedosto.txt | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+commit 905cb39681266f8212e1a47101b432abfd81128d
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 14:50:51 2018 +0200
+
+    lisätty hakemisto
+
+ stuff/esimerkki.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 1a71041b5637f6743e06e6969575782d3bd1c20d
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 14:49:08 2018 +0200
+
+    muutoksia tehty
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 8776d77171f28ca4667e41d22e323152690a6ab0
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 14:47:38 2018 +0200
+
+    lisätty kolmas tiedosto
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0988f44faa32b88dd95aa1bae8b9634d89cc395a
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 14:42:37 2018 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit ab962e3e5c2ff8d569e1b1915cd5f68fcaff5f70
+Author: Rasmus Heikkinen <rasmus.heikkinen@helsinki.fi>
+Date:   Tue Mar 20 14:39:08 2018 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
