@@ -2,5 +2,5 @@
 
 _Ohjelmistotekniikan menetelmät -kurssin **viikon 1** git-harjoitus_
 
-[komentorivi.txt](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+[komentorivi.txt](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)  
 [gitlog.txt](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
