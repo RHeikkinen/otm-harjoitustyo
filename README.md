@@ -1,4 +1,4 @@
-<h1>OTM viikon 1 git-harjoitus</h1>
+<h1>OTM harjoitustyö :heavy_exclamation_mark:</h1>
 
 _Ohjelmistotekniikan menetelmät -kurssin **viikon 1** git-harjoitus_
 
