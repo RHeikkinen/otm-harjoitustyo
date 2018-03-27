@@ -9,7 +9,5 @@ Sovelluksen tarkoitus on helpottaa taloudenhallintaa. Sovelluksen avulla k√§ytt√
   
   <h2>Suunnitellut toiminnallisuudet</h2>
     
-    <li>
-      <ul>testi</ul>
-    </li>
+
       
