@@ -1,4 +1,4 @@
-<h1>Vaatimusmäärittely</h1>
+<h1>BudgetApp - Vaatimusmäärittely</h1>
   <h2>Sovelluksen tarkoitus</h2>
   
 Sovelluksen tarkoitus on helpottaa käyttäjän taloudenhallintaa. Sovelluksen avulla käyttäjän on mahdollista pitää kirjaa omista  tuloista ja menoista sekä luoda omia henkilökohtaisia budjetteja.
