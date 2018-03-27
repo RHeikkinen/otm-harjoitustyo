@@ -41,13 +41,15 @@ Sovelluksen tarkoitus on helpottaa käyttäjän taloudenhallintaa. Sovelluksen a
   
   * erilaisia raportteja (mm. tulot/menot viime kuussa/viikolla ja muita vastaavanlaisia)
   
-  * eri yritysten/kauppojen/ketjujen lisääminen sovelluksen tietokantaan
+  * eri yritysten/kauppojen/ketjujen/henkilöiden lisääminen sovelluksen tietokantaan
   
     * esim. menoa luodessa voitaisiin valita/kirjoittaa mihin kauppaan se liittyy
     
     * tällöin myös voitaisiin seurata esim. mihin kauppaan kuukaudessa kohdistuu eniten menoja
     
   * mahdollisuus lisätä toistuva tulo tai meno (esim. kuukausittainen palkka)
+  
+  * menoille ja tuloille eri kategorioita (palkka, vaatteet, ruoka, asuminen, viihde jne.)
   
  
   
