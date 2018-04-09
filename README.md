@@ -34,7 +34,7 @@
     <a href="https://github.com/RHeikkinen/otm-harjoitustyo/tree/master/laskarit/viikko3">
       Viikko 3
     </a>  
-    (Luokka- ja sekvenssikaaviot)
+    (luokka- ja sekvenssikaaviot)
   </h3>
 
 [Monopoli-luokkakaavio 1](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht1-Monopoli.png)    
