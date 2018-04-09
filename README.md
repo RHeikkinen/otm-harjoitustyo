@@ -37,6 +37,6 @@
     (Luokka- ja sekvenssikaaviot)
   </h3>
 
-[Monopoli-luokkakaavio 1](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko2/teht1-Monopoli.png)    
-[Monopoli-luokkakaavio 2](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko2/teht2-Monopoli.png)
+[Monopoli-luokkakaavio 1](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht1-Monopoli.png)    
+[Monopoli-luokkakaavio 2](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht2-Monopoli.png)
 
