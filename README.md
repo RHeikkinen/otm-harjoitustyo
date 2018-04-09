@@ -29,3 +29,14 @@
   </h3>
 
 [Testikattavuus](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
+
+  <h3>
+    <a href="https://github.com/RHeikkinen/otm-harjoitustyo/tree/master/laskarit/viikko3">
+      Viikko 3
+    </a>  
+    (Luokka- ja sekvenssikaaviot)
+  </h3>
+
+[Monopoli-luokkakaavio 1](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko2/teht1-Monopoli.png)    
+[Monopoli-luokkakaavio 2](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko2/teht2-Monopoli.png)
+
