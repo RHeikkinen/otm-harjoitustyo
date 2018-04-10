@@ -13,38 +13,3 @@ Projektin koodin suorittaminen onnistuu komennolla
 mvn compile exec:java -Dexec.mainClass=budgetapp.domain.Main
 ```
 ***
-
-<h2>Laskarit</h2>
-
-  <h3>
-    <a href="https://github.com/RHeikkinen/otm-harjoitustyo/tree/master/laskarit/viikko1">
-      Viikko 1
-    </a> 
-    (git-harjoitus)
-  </h3>
-
-[komentorivi.txt](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)  
-[gitlog.txt](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-  <h3>
-    <a href="https://github.com/RHeikkinen/otm-harjoitustyo/tree/master/laskarit/viikko2">
-      Viikko 2
-    </a>  
-    (JUnit)
-  </h3>
-
-[Testikattavuus](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
-
-  <h3>
-    <a href="https://github.com/RHeikkinen/otm-harjoitustyo/tree/master/laskarit/viikko3">
-      Viikko 3
-    </a>  
-    (luokka- ja sekvenssikaaviot)
-  </h3>
-
-[Monopoli-luokkakaavio 1](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht1-Monopoli.png) __(tehtävä 1)__    
-[Monopoli-luokkakaavio 2](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht2-Monopoli.png) __(tehtävä 2)__  
-[Sekvenssikaavio 1](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht3-sekvenssikaavio.png) __(tehtävä 3)__  
-[Sekvenssikaavio 2](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht4-sekvenssikaavio.png) __(tehtävä 4)__
-
-
