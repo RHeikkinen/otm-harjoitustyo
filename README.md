@@ -7,6 +7,11 @@
 [Vaatimusmäärittely](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)  
 [Tuntikirjanpito](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+### Komentorivitoiminnot
+Projektin koodin suorittaminen onnistuu komennolla
+```
+mvn compile exec:java -Dexec.mainClass=budgetapp.domain.Main
+```
 ***
 
 <h2>Laskarit</h2>
