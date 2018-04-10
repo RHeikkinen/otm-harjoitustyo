@@ -40,6 +40,6 @@
 [Monopoli-luokkakaavio 1](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht1-Monopoli.png) __(tehtävä 1)__    
 [Monopoli-luokkakaavio 2](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht2-Monopoli.png) __(tehtävä 2)__  
 [Sekvenssikaavio 1](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht3-sekvenssikaavio.png) __(tehtävä 3)__  
-[Sekvenssikaavio 2](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht3-sekvenssikaavio.png) __(tehtävä 4)__
+[Sekvenssikaavio 2](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/laskarit/viikko3/teht4-sekvenssikaavio.png) __(tehtävä 4)__
 
 
