@@ -4,4 +4,5 @@
 |:------:|:-------:|:----------:|
 | 27.3.  | 2       | määrittelydokumentti |
 | 10.4.  | 3       | suunnittelua ja esiasteista toteutusta        |
-|        |         |          |
+| 17.4.  | 1       | sovelluksen rakenteen suunnittelu, pientä laajennusta         |
+| yht.   | 6   |    |
