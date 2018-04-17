@@ -22,6 +22,18 @@ public class WalletTest {
     public void getBalanceReturnsTheRightBalance() {
         assertEquals(400.0, myWallet.getBalance(), DELTA);
     }
+    
+    @Test
+    public void depositTest() {
+        myWallet.deposit(300.25);
+        assertEquals(700.25, myWallet.getBalance(), DELTA);
+    }
+    
+    @Test
+    public void withdrawTest() {
+        myWallet.withdraw(300.25);
+        assertEquals(99.75, myWallet.getBalance(), DELTA);
+    }
 
 
     
