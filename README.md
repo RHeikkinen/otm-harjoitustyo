@@ -13,4 +13,8 @@ Projektin koodin suorittaminen onnistuu komennolla
 ```
 mvn compile exec:java -Dexec.mainClass=budgetapp.domain.Main
 ```
+Testien suorittaminen + jacoco-testauskattavuus komennolla
+```
+mvn test jacoco:report
+```
 ***
