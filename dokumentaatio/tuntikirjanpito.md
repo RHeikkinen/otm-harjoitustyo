@@ -5,4 +5,5 @@
 | 27.3.  | 2       | määrittelydokumentti |
 | 10.4.  | 3       | suunnittelua ja esiasteista toteutusta        |
 | 17.4.  | 1       | sovelluksen rakenteen suunnittelu, pientä laajennusta         |
-| yht.   | 6   |    |
+| 24.4.  | 3       | Checkstyle, tulostusten formatointia, tekstikäyttöliittymän aloitus |
+| yht.   | 9       |    |
