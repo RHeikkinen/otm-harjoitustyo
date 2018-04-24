@@ -9,6 +9,7 @@ public class Main {
         
         TextUI budgetapp = new TextUI();
         budgetapp.start();
+                
     }
     
 }
