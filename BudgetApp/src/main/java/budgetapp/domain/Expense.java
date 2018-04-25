@@ -3,7 +3,7 @@ package budgetapp.domain;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
-public class Expense {
+public class Expense extends Transaction {
 
     private int id;
     private Wallet wallet;
@@ -13,10 +13,11 @@ public class Expense {
 //  private static final NumberFormat EURO_FORMAT_FRANCE = NumberFormat.getCurrencyInstance(Locale.FRANCE);
 
     public Expense(int id, Wallet wallet, double amount, String info) {
-        this.id = id;
-        this.wallet = wallet;
-        this.amount = amount;
-        this.info = info;
+        super(id, wallet, amount, info);
+    }
+    
+    public Expense(Wallet wallet, double amount, String info) {
+        super(wallet, amount, info);
     }
 
     public int getId() {
@@ -34,10 +35,10 @@ public class Expense {
     public String getInfo() {
         return info;
     }
-    
+
     @Override
     public String toString() {
-        return centsFormat.format(amount);
+        return "- " + centsFormat.format(amount) + " (" + this.getInfo() + ")";
     }
 
 }

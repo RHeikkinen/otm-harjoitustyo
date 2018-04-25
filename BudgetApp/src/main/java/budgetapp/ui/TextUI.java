@@ -27,6 +27,7 @@ public class TextUI {
         commands.put("5", "5 show your budget");
         commands.put("+", "+ income");
         commands.put("-", "- expense");
+        commands.put("0", "0 reset wallet");
     }
 
     public void printCommands() {
@@ -36,16 +37,15 @@ public class TextUI {
         System.out.println("[1] create a wallet");
         System.out.println("[2] show balance");
         System.out.println("[3] show all transactions");
-        System.out.println("[4] create a budget");
-        System.out.println("[5] show your budget");
-        System.out.println("[+] add income");
-        System.out.println("[-] add expense");
+//      System.out.println("[4] create a budget");
+//      System.out.println("[5] show your budget");
+        System.out.println("[+] income");
+        System.out.println("[-] expense");
         System.out.println("[0] reset wallet");
     }
 
     public void start() {
         System.out.println("Welcome to BudgetApp!");
-
         printCommands();
 
         while (true) {
@@ -74,19 +74,25 @@ public class TextUI {
                 addIncome();
             } else if (command.equals("-")) {
                 addExpense();
+            } else if (command.equals("0")) {
+                reset();
             }
 
         }
     }
-    
+
     private void createWallet() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.print("Name: ");
+        String name = scanner.nextLine();
+        System.out.print("Opening balance: ");
+        double balance = Double.parseDouble(scanner.nextLine());
+        service.createWallet(name, balance);
     }
 
     private void getBalance() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        service.getBalance();
     }
-
+    
     private void createBudget() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -96,15 +102,27 @@ public class TextUI {
     }
 
     private void getTransactions() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        service.getTransactions();
     }
 
     private void addIncome() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        System.out.print("Amount: ");
+        double amount = Double.parseDouble(scanner.nextLine());
+        System.out.print("Description (e.g. date): ");
+        String description = scanner.nextLine();
+        service.addIncome(amount, description);
+    }   
 
     private void addExpense() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.print("Amount: ");
+        double amount = Double.parseDouble(scanner.nextLine());
+        System.out.print("Description (e.g. date): ");
+        String desc = scanner.nextLine();
+        service.addExpense(amount, desc);
+    }
+
+    private void reset() {
+        service.resetWallet();
     }
 
 }

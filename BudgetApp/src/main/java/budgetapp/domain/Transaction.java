@@ -1,32 +1,27 @@
 package budgetapp.domain;
 
-import java.math.BigDecimal;
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
-import java.util.Locale;
 
-public class Budget {
+public abstract class Transaction {
 
     private int id;
     private Wallet wallet;
-    private double budget;
+    private double amount;
     private String info;
     private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
 //  private static final NumberFormat EURO_FORMAT_FRANCE = NumberFormat.getCurrencyInstance(Locale.FRANCE);
 
-    public Budget(int id, double budget, String info, Wallet myWallet) {
+    public Transaction(int id, Wallet wallet, double amount, String info) {
         this.id = id;
-        this.budget = budget;
+        this.wallet = wallet;
+        this.amount = amount;
         this.info = info;
-        this.wallet = myWallet;
-
     }
     
-    public Budget(double budget, String info, Wallet myWallet) {
-        this.budget = budget;
+    public Transaction(Wallet wallet, double amount, String info) {
+        this.wallet = wallet;
+        this.amount = amount;
         this.info = info;
-        this.wallet = myWallet;
-
     }
 
     public int getId() {
@@ -37,13 +32,16 @@ public class Budget {
         return wallet;
     }
 
-    public double getBudget() {
-        return budget;
+    public double getAmount() {
+        return amount;
     }
 
     public String getInfo() {
         return info;
     }
-    
 
+    @Override
+    public String toString() {
+        return centsFormat.format(amount) + "\n" + getInfo();
+    }
 }
