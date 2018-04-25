@@ -6,6 +6,9 @@
 [Alustava luokkakaavio](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/BudgetAppUML.png)  
 [Tuntikirjanpito](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)  
 
+## Julkaisut (releases)
+[Viikko 5](https://github.com/RHeikkinen/otm-harjoitustyo/releases/tag/vko5)
+
 ## Komentorivitoiminnot
 Projektin koodin suorittaminen onnistuu komennolla
 ```
