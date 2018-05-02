@@ -3,7 +3,7 @@
   <h2>Dokumentaatio</h2>
 
 [Vaatimusmäärittely](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)  
-[Alustava luokkakaavio](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/BudgetAppUML.png)  
+[Arkkitehtuurikuvaus](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)  
 [Tuntikirjanpito](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)  
 
 ## Julkaisut (releases)
