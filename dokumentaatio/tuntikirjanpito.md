@@ -8,6 +8,6 @@
 | 24.4.  | 3       | Checkstyle, rahasummien tulostusten formatointi, tekstikäyttöliittymän aloitus |
 |        | 2       | tekstikäyttöliittymän toteutusta |
 | 25.4.  | 3       | tekstikäyttöliittymän laajennusta (osa perustoiminnoista toimii, ei vielä tiedon pysyväistalletusta)|
-| 2.5.   | 0,5     | repositoriota päivitetty, sovelluksessa ei edistystä viime viikosta ☹️|
+| 2.5.   | 0,5     | repositoriota päivitetty, sovelluksessa ei edistystä edellisestä viikosta ☹️|
 ||||
 | yht.   | 14,5       |    |
