@@ -2,33 +2,15 @@ package budgetapp.domain;
 
 import java.text.DecimalFormat;
 
-public abstract class Transaction {
+public class Transaction {
 
-    private int id;
-    private Wallet wallet;
     private double amount;
     private String info;
     private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
 
-    public Transaction(int id, Wallet wallet, double amount, String info) {
-        this.id = id;
-        this.wallet = wallet;
+    public Transaction(double amount, String info) {
         this.amount = amount;
         this.info = info;
-    }
-    
-    public Transaction(Wallet wallet, double amount, String info) {
-        this.wallet = wallet;
-        this.amount = amount;
-        this.info = info;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public Wallet getWallet() {
-        return wallet;
     }
 
     public double getAmount() {
@@ -38,9 +20,13 @@ public abstract class Transaction {
     public String getInfo() {
         return info;
     }
+    
+    public void setInfo(String description) {
+        this.info = description;
+    }
 
     @Override
     public String toString() {
-        return centsFormat.format(amount) + " (" + this.getInfo() + ")";
+        return this.getInfo() + " " + centsFormat.format(amount);
     }
 }

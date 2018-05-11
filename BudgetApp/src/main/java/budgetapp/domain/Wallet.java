@@ -1,17 +1,21 @@
 package budgetapp.domain;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Wallet {
 
     private String name;
     private double balance;
     private Budget budget;
+    private List<Transaction> transactions;
     private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
 
     public Wallet(String name, double openingBalance) {
         this.name = name;
         this.balance = openingBalance;
+        this.transactions = new ArrayList<>();
     }
 
     public double getBalance() {
@@ -23,39 +27,34 @@ public class Wallet {
     }
 
     public void deposit(double amount) {
-        if (amount >= 0) {
-            this.balance += amount;
+        if (amount < 0) {
+            return;
         }
+        this.balance += amount;
+        this.transactions.add(new Transaction(amount, "+"));
     }
-
+    
     public void withdraw(double amount) {
-        if (this.balance >= amount) {
-            this.balance -= amount;
+        if (amount < 0) {
+            return;
         }
-    }
-    
-    public void withdraw(double amount, Budget budget) {
-        if (this.balance >= amount) {
-            this.balance -= amount;
-        }
-    }
-    
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    public String getName() {
-        return this.name;
+        this.balance -= amount;
     }
 
     @Override
     public String toString() {
         return centsFormat.format(balance);
     }
+    
+    public void getTransactions() {
+        transactions.forEach((t) -> {
+            System.out.println(t.toString());
+        });
+    }
 
     public void reset() {
         this.balance = 0;
+        this.transactions.clear();
     }
-    
-   
+ 
 }

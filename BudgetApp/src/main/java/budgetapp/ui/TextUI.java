@@ -96,7 +96,7 @@ public class TextUI {
             return;
         }
         
-        System.out.print("Opening balance (Use format 0.10 or 1000  / Otherwise, balance will be set at 0.00): ");
+        System.out.print("Opening balance (Use correct format 0.10 or 1000  / Otherwise, balance will be set at 0.00): ");
         double openingBalance;
         try {
             openingBalance = Double.parseDouble(scanner.nextLine());
@@ -118,7 +118,7 @@ public class TextUI {
             return;
         }
         double newBalance;
-        System.out.print("New balance (Use format 0.10 or 1000 / Otherwise, the balance will not be changed): ");
+        System.out.print("New balance (Use correct format 0.10 or 1000 / Otherwise, the balance will not be changed): ");
         try {
             newBalance = Double.parseDouble(scanner.nextLine());
         } catch (NumberFormatException e) {
@@ -137,13 +137,13 @@ public class TextUI {
     }
 
     private void createBudget() {
-        System.out.println("Do you want to create a personal budget? (y/n)");
+        System.out.print("Do you want to create a personal budget? (y/n) ");
         boolean yes = this.yesOrNo();
         if (!yes) {
             return;
         }
         double budget;
-        System.out.print("What's the size of your personal budget for your chosen time perod? (Use format 0.10 or 100) ");
+        System.out.print("What's the size of your personal budget? (Use correct format 0.10 or 100) ");
         try {
             budget = Double.parseDouble(scanner.nextLine());
         } catch (NumberFormatException e) {
@@ -173,9 +173,18 @@ public class TextUI {
             return;
         }
         System.out.print("Amount: ");
-        double amount = Double.parseDouble(scanner.nextLine());
-        System.out.print("Description (e.g. date): ");
-        String description = scanner.nextLine();
+        double amount;
+        try {
+            amount = Double.parseDouble(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Expense cancelled.");
+            return;
+        }
+        if (amount < 0) {
+            System.out.println("Negative amount. Balance not updated.");
+            return;
+        }
+        String description = "+";
         service.addIncome(amount, description);
     }
 
@@ -185,13 +194,33 @@ public class TextUI {
             return;
         }
         System.out.print("Amount: ");
-        double amount = Double.parseDouble(scanner.nextLine());
-        System.out.print("Description (e.g. date): ");
-        String desc = scanner.nextLine();
+        double amount;
+        try {
+            amount = Double.parseDouble(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Expense cancelled.");
+            return;
+        }
+        if (amount < 0) {
+            System.out.println("Negative amount. Balance not updated.");
+            return;
+        }
+        String desc = "-";
         service.addExpense(amount, desc);
     }
 
     private void reset() {
+        if (!this.service.walletExists()) {
+            System.out.println("You don't have a wallet.");
+            return;
+        }
+        
+        System.out.print("Are you sure? (y/n) ");
+        boolean yes = this.yesOrNo();
+        if (!yes) {
+            return;
+        }
+        
         try {
             service.resetWallet();
         } catch (Exception e) {

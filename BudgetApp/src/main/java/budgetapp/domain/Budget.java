@@ -5,39 +5,29 @@ import java.text.DecimalFormat;
 public class Budget {
 
     private int id;
-    private Wallet wallet;
     private double budget;
-    private String info;
+    private double budgetCounter;
     private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
     
-    public Budget(int id, double budget, Wallet myWallet) {
-        this.id = id;
+    public Budget(double budget) {
         this.budget = budget;
-        this.wallet = myWallet;
-
-    }
-    
-    public Budget(double budget, String info, Wallet myWallet) {
-        this.budget = budget;
-        this.info = info;
-        this.wallet = myWallet;
-
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public Wallet getWallet() {
-        return wallet;
+        this.budgetCounter = budget;
     }
 
     public double getBudget() {
         return budget;
     }
+    
+    public double getBudgetCounter() {
+        return this.budgetCounter;
+    }
 
-    public String getInfo() {
-        return info;
+    public void updateBudgetCounter(double amount) {
+        budgetCounter -= amount;
+    }
+    
+    public String getExpanditure() {
+        return centsFormat.format(getBudget() - budgetCounter);
     }
     
     @Override
