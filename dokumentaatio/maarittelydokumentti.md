@@ -7,28 +7,36 @@ Sovelluksen tarkoitus on helpottaa käyttäjän taloudenhallintaa. Sovelluksen a
     
   Sovelluksella on vain yksi käyttäjärooli eli _normaali käyttäjä_.
   
-  <h2>Suunnitellut toiminnallisuudet</h2>
+  <h2>Toiminnallisuudet</h2>
     
-  Sovelluksen perusversiossa on tarkoitus olla ainakin seuraavat ominaisuudet:
-  * käyttäjä voi nimetä lompakon ja asettaa alkusaldon
+  Sovelluksen suppea perusversio tarjoaa seuraavat ominaisuudet:
+  * käyttäjä voi luoda itselleen lompakon ja asettaa sille alkusaldon
     
   * käyttäjä voi lisätä menoja ja tuloja
   
     * käyttäjällä on vain yksi *"lompakko"*, johon jokainen tulo ja meno liittyvät
     
-  * käyttäjä voi tarkastella omia menojaan ja tulojaan
+  * käyttäjä voi tarkastella omia menojaan ja tulojaan listattuna samassa näkymässä
     
-  * käyttäjä pystyy tekemään henkilökohtaisen budjetin (esim. viikko-/kuukausi-/vuosi-)
+  * käyttäjä pystyy tekemään henkilökohtaisen budjetin
   
     * jokainen meno vaikuttaa budjettiin
     
     * käyttäjä voi seurata budjetin toteutumista
+    
+    * käyttäjä ei voi määrittää budjetille tiettyä ajanjaksoa
   
-  * käyttäjä voi resetoida eli palauttaa lompakon alkutilaan
+  * käyttäjä voi resetoida lompakon eli palauttaa sen alkutilaan
+  
+  * sovelluksessa ei ole mahdollisuutta tiedon pysyväistalletukseen
       
   <h2>Ideoita sovelluksen laajentamiseen</h2>
   
   Muutamia esimerkkejä ominaisuuksista, joita voitaisiin lisätä sovellukseen jatkokehityksessä:
+  * tiedon pysyväistalletus (tietokanta)
+  
+  * päivämäärän + ajan implementointi
+  
   * käyttäjä voi muokata ja poistaa menoja, tuloja ja budjetteja
   
   * oman profiilin luonti, jolloin sovellusta voisi käyttää useampi henkilö
