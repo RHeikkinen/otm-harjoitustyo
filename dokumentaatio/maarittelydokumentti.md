@@ -2,10 +2,6 @@
   <h2>Sovelluksen tarkoitus</h2>
   
 Sovelluksen tarkoitus on helpottaa käyttäjän taloudenhallintaa. Sovelluksen avulla käyttäjän on mahdollista pitää kirjaa omista  tuloista ja menoista sekä luoda omia henkilökohtaisia budjetteja.
-
-  <h2>Käyttäjät</h2>
-    
-  Sovelluksella on vain yksi käyttäjärooli eli _normaali käyttäjä_.
   
   <h2>Toiminnallisuudet</h2>
     
