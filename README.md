@@ -1,9 +1,11 @@
-<h1>BudgetApp (OTM harjoitustyö kevät 2018)</h1>
+<h1>BudgetApp</h1>
 
   <h2>Dokumentaatio</h2>
 
-[Vaatimusmäärittely](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)  
+[Vaatimusmäärittely](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
+
 [Arkkitehtuurikuvaus](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)  
+
 [Tuntikirjanpito](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)  
 
 ## Julkaisut (releases)
@@ -19,11 +21,13 @@ Testien suorittaminen ja jacoco-testauskattavuus onnistuvat komennolla
 ```
 mvn test jacoco:report
 ```
+Kattavuusraportin saa näkyviin avaamalla selaimella tiedoston target/site/jacoco/index.html
 ### Checkstyle
-Voit suorittaa Checkstylen komennolla
+Checkstylen voi suorittaa komennolla
 ```
 mvn jxr:jxr checkstyle:checkstyle
 ```
+Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto target/site/checkstyle.html
 ### Suoritettavan jar-tiedoston luominen
 komento
 ```
