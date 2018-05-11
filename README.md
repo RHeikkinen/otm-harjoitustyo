@@ -1,4 +1,5 @@
 <h1>BudgetApp</h1>
+Sovelluksen avulla käyttäjä voi pitää kirjaa omista tuloista ja menoistaan, sekä luoda oman hekilökohtaisen budjetin ja seurata sen toteutumista. Sovellus on suppea ja tämänhetkisessä muodossaan käyttökelvoton, sillä sovelluksessa ei esimerkiksi ole mahdollista tallettaa tietoa pysyvästi.
 
   <h2>Dokumentaatio</h2>
 
@@ -12,10 +13,21 @@
 [Viikko 5](https://github.com/RHeikkinen/otm-harjoitustyo/releases/tag/vko5)
 
 ## Komentorivitoiminnot
-Projektin koodin suorittaminen onnistuu komennolla:
+### Projektin koodin suorittamiseen on useampi vaihtoehto:
+Jos projekti on ladattuna tietokoneelle, voi sen suorittaa sovelluksen juurikansiossa komennolla:
 ```
 mvn compile exec:java -Dexec.mainClass=budgetapp.domain.Main
 ```
+Toinen vaihtoehto on __suoritettavan jar-tiedoston generoiminen__ target-hakemistoon. Tämä onnistuu komennolla:
+```
+mvn package
+```
+Tämän jälkeen ohjelman voi suorittaa juurikansiossa komennolla:
+```
+java -jar target/BudgetApp-1.0-SNAPSHOT.jar
+```
+Olettaen, että tiedoston nimeä ei ole muutettu ja se löytyy hakemistosta target.
+***
 ### Testit ja testauskattavuus
 Testien suorittaminen ja jacoco-testauskattavuus onnistuvat komennolla:
 ```
@@ -28,13 +40,4 @@ Checkstylen voi suorittaa komennolla:
 mvn jxr:jxr checkstyle:checkstyle
 ```
 Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedoston target/site/checkstyle.html
-### Suoritettavan jar-tiedoston luominen
-Hakemistoon target on mahdollista luoda suoritettava jar-tiedosto _BudgetApp-1.0-SNAPSHOT.jar_ komennolla:
-```
-mvn package
-```
-Tämän jälkeen ohjelman voi suorittaa ohjelman juurikansiossa komennolla
-```
-java -jar target/BudgetApp-1.0-SNAPSHOT.jar
-```
 ***
