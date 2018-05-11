@@ -3,6 +3,8 @@ Sovelluksen avulla käyttäjä voi pitää kirjaa omista tuloista ja menoistaan,
 
   <h2>Dokumentaatio</h2>
 
+[Käyttöohje](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
 [Vaatimusmäärittely](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
 
 [Arkkitehtuurikuvaus](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)  
@@ -12,7 +14,7 @@ Sovelluksen avulla käyttäjä voi pitää kirjaa omista tuloista ja menoistaan,
 ## Releaset
 [Viikko 5](https://github.com/RHeikkinen/otm-harjoitustyo/releases/tag/vko5)
 
-[Loppupalautus](https://github.com/RHeikkinen/otm-harjoitustyo/releases/tag/v1.0)
+**[Loppupalautus](https://github.com/RHeikkinen/otm-harjoitustyo/releases/tag/v1.0)**
 
 ## Komentorivitoiminnot
 ### Projektin koodin suorittamiseen on useampi vaihtoehto:
