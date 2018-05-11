@@ -6,7 +6,7 @@ public class Transaction {
 
     private double amount;
     private String info;
-    private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
+    private static final DecimalFormat CENTS_FORMAT = new DecimalFormat("0.00");
 
     public Transaction(double amount, String info) {
         this.amount = amount;
@@ -27,6 +27,6 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return this.getInfo() + " " + centsFormat.format(amount);
+        return this.getInfo() + " " + CENTS_FORMAT.format(amount);
     }
 }

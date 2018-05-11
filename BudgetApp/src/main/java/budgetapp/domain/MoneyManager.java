@@ -7,7 +7,7 @@ public class MoneyManager {
 
     private Wallet wallet;
     private Budget budget;
-    private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
+    private static final DecimalFormat CENTS_FORMAT = new DecimalFormat("0.00");
 
     public MoneyManager() {
     }
@@ -77,7 +77,7 @@ public class MoneyManager {
     }
 
     public String getBudgetRemain() {
-        return centsFormat.format(this.budget.getBudgetCounter());
+        return CENTS_FORMAT.format(this.budget.getBudgetCounter());
     }
 
 }

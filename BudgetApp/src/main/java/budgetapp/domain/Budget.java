@@ -7,7 +7,7 @@ public class Budget {
     private int id;
     private double budget;
     private double budgetCounter;
-    private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
+    private static final DecimalFormat CENTS_FORMAT = new DecimalFormat("0.00");
     
     public Budget(double budget) {
         this.budget = budget;
@@ -27,12 +27,12 @@ public class Budget {
     }
     
     public String getExpanditure() {
-        return centsFormat.format(getBudget() - budgetCounter);
+        return CENTS_FORMAT.format(getBudget() - budgetCounter);
     }
     
     @Override
     public String toString() {
-        return centsFormat.format(budget);
+        return CENTS_FORMAT.format(budget);
     }
 
 }

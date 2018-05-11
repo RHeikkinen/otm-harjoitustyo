@@ -10,7 +10,7 @@ public class Wallet {
     private double balance;
     private Budget budget;
     private List<Transaction> transactions;
-    private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
+    private static final DecimalFormat CENTS_FORMAT = new DecimalFormat("0.00");
 
     public Wallet(String name, double openingBalance) {
         this.name = name;
@@ -43,7 +43,7 @@ public class Wallet {
 
     @Override
     public String toString() {
-        return centsFormat.format(balance);
+        return CENTS_FORMAT.format(balance);
     }
     
     public void getTransactions() {
