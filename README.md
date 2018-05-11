@@ -1,5 +1,5 @@
 <h1>BudgetApp</h1>
-Sovelluksen avulla käyttäjä voi pitää kirjaa omista tuloista ja menoistaan, sekä luoda oman hekilökohtaisen budjetin ja seurata sen toteutumista. Sovellus on suppea ja tämänhetkisessä muodossaan käyttökelvoton, sillä sovelluksessa ei esimerkiksi ole mahdollista tallettaa tietoa pysyvästi.
+Sovelluksen avulla käyttäjä voi pitää kirjaa omista tuloista ja menoistaan, sekä luoda oman henkilökohtaisen budjetin ja seurata sen toteutumista. Sovellus on suppea ja tämänhetkisessä muodossaan käyttökelvoton, sillä sovelluksessa ei esimerkiksi ole mahdollista tallettaa tietoa pysyvästi.
 
   <h2>Dokumentaatio</h2>
 
