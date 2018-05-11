@@ -12,26 +12,29 @@
 [Viikko 5](https://github.com/RHeikkinen/otm-harjoitustyo/releases/tag/vko5)
 
 ## Komentorivitoiminnot
-Projektin koodin suorittaminen onnistuu komennolla
+Projektin koodin suorittaminen onnistuu komennolla:
 ```
 mvn compile exec:java -Dexec.mainClass=budgetapp.domain.Main
 ```
 ### Testit ja testauskattavuus
-Testien suorittaminen ja jacoco-testauskattavuus onnistuvat komennolla
+Testien suorittaminen ja jacoco-testauskattavuus onnistuvat komennolla:
 ```
 mvn test jacoco:report
 ```
 Kattavuusraportin saa näkyviin avaamalla selaimella tiedoston target/site/jacoco/index.html
 ### Checkstyle
-Checkstylen voi suorittaa komennolla
+Checkstylen voi suorittaa komennolla:
 ```
 mvn jxr:jxr checkstyle:checkstyle
 ```
-Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto target/site/checkstyle.html
+Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedoston target/site/checkstyle.html
 ### Suoritettavan jar-tiedoston luominen
-komento
+Hakemistoon target on mahdollista luoda suoritettava jar-tiedosto _BudgetApp-1.0-SNAPSHOT.jar_ komennolla:
 ```
 mvn package
 ```
-luo hakemistoon target suoritettavan jar-tiedoston _BudgetApp-1.0-SNAPSHOT.jar_ 
+Tämän jälkeen ohjelman voi suorittaa ohjelman juurikansiossa komennolla
+```
+java -jar target/BudgetApp-1.0-SNAPSHOT.jar
+```
 ***
