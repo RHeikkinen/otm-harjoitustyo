@@ -9,8 +9,10 @@ Sovelluksen avulla käyttäjä voi pitää kirjaa omista tuloista ja menoistaan,
 
 [Tuntikirjanpito](https://github.com/RHeikkinen/otm-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)  
 
-## Julkaisut (releases)
+## Releaset
 [Viikko 5](https://github.com/RHeikkinen/otm-harjoitustyo/releases/tag/vko5)
+
+[Loppupalautus](https://github.com/RHeikkinen/otm-harjoitustyo/releases/tag/v1.0)
 
 ## Komentorivitoiminnot
 ### Projektin koodin suorittamiseen on useampi vaihtoehto:
