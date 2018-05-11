@@ -1,6 +1,5 @@
 package budgetapp.domain;
 
-import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
 public class Expense extends Transaction {
@@ -10,7 +9,6 @@ public class Expense extends Transaction {
     private double amount;
     private String info;
     private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
-//  private static final NumberFormat EURO_FORMAT_FRANCE = NumberFormat.getCurrencyInstance(Locale.FRANCE);
 
     public Expense(int id, Wallet wallet, double amount, String info) {
         super(id, wallet, amount, info);
@@ -38,7 +36,7 @@ public class Expense extends Transaction {
 
     @Override
     public String toString() {
-        return "- " + centsFormat.format(amount) + " (" + this.getInfo() + ")";
+        return "- " + super.toString();
     }
 
 }

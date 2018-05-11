@@ -1,15 +1,13 @@
 package budgetapp.domain;
 
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
-import java.util.Locale;
 
 public class Wallet {
 
     private String name;
     private double balance;
+    private Budget budget;
     private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
-//  private static final NumberFormat EURO_FORMAT_FRANCE = NumberFormat.getCurrencyInstance(Locale.FRANCE);
 
     public Wallet(String name, double openingBalance) {
         this.name = name;
@@ -18,6 +16,10 @@ public class Wallet {
 
     public double getBalance() {
         return this.balance;
+    }
+    
+    public void setBalance(double amount) {
+        this.balance = amount;
     }
 
     public void deposit(double amount) {
@@ -32,6 +34,12 @@ public class Wallet {
         }
     }
     
+    public void withdraw(double amount, Budget budget) {
+        if (this.balance >= amount) {
+            this.balance -= amount;
+        }
+    }
+    
     public void setName(String name) {
         this.name = name;
     }
@@ -40,12 +48,14 @@ public class Wallet {
         return this.name;
     }
 
+    @Override
     public String toString() {
-//      return EURO_FORMAT_FRANCE.format(balance);
         return centsFormat.format(balance);
     }
 
     public void reset() {
         this.balance = 0;
     }
+    
+   
 }

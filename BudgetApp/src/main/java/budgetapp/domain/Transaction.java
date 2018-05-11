@@ -9,7 +9,6 @@ public abstract class Transaction {
     private double amount;
     private String info;
     private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
-//  private static final NumberFormat EURO_FORMAT_FRANCE = NumberFormat.getCurrencyInstance(Locale.FRANCE);
 
     public Transaction(int id, Wallet wallet, double amount, String info) {
         this.id = id;
@@ -42,6 +41,6 @@ public abstract class Transaction {
 
     @Override
     public String toString() {
-        return centsFormat.format(amount) + "\n" + getInfo();
+        return centsFormat.format(amount) + " (" + this.getInfo() + ")";
     }
 }

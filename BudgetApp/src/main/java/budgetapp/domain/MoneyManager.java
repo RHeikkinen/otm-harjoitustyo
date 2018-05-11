@@ -1,51 +1,59 @@
 package budgetapp.domain;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MoneyManager {
 
-    private Wallet myWallet;
+    private Wallet wallet;
+    private Budget budget;
     private List<Transaction> transactions;
+    public double budgetCounter;
+    private static final DecimalFormat centsFormat = new DecimalFormat("0.00");
 
     public MoneyManager() {
-        this.myWallet = new Wallet("My Wallet", 0.0);
         this.transactions = new ArrayList<>();
     }
 
     public void createWallet(String name, double startingBalance) {
-        this.myWallet = new Wallet(name, startingBalance);
+        this.wallet = new Wallet(name, startingBalance);
+    }
+
+    public boolean walletExists() {
+        return this.wallet != null;
+    }
+
+    public void setBalance(double balance) {
+        this.wallet.setBalance(balance);
+    }
+
+    public String getBalance() {
+        return wallet.toString();
     }
 
     public void addIncome(double amount, String description) {
         if (amount >= 0) {
-            myWallet.deposit(amount);
-            this.transactions.add(new Income(myWallet, amount, description));
-            System.out.println("Transaction succesful");
-            System.out.println("Your balance is: " + myWallet.toString());
-        } else {
-            System.out.println("Transaction failed");
+            wallet.deposit(amount);
+            this.transactions.add(new Income(wallet, amount, description));
         }
     }
 
     public void addExpense(double amount, String description) {
-        if (amount >= 0 && myWallet.getBalance() >= amount) {
-            myWallet.withdraw(amount);
-            this.transactions.add(new Expense(myWallet, amount, description));
-            System.out.println("Transaction succesful");
-            System.out.println("Your balance is: " + myWallet.toString());
-        } else {
-            System.out.println("Transaction failed");
+        if (amount >= 0 && wallet.getBalance() >= amount) {
+            wallet.withdraw(amount);
+            if (budgetExists()) {
+                this.budgetCounter -= amount;
+            }
+            this.transactions.add(new Expense(wallet, amount, description));
         }
     }
 
     public void resetWallet() {
-        this.myWallet = new Wallet("My Wallet", 0.0);
-        this.transactions.clear();
-        System.out.println("Reset succesful");
-        System.out.println("---");
-        System.out.println("Your balance is: " + myWallet.toString());
-
+        if (walletExists()) {
+            this.wallet.reset();
+            this.transactions.clear();
+        }
     }
 
     public void getTransactions() {
@@ -56,8 +64,25 @@ public class MoneyManager {
 
     }
 
-    public void getBalance() {
-        System.out.println("Your balance is: " + myWallet.toString());
+    public boolean budgetExists() {
+        return this.budget != null;
+    }
+
+    public void createBudget(double amount) {
+        this.budget = new Budget(1, amount, wallet);
+        this.budgetCounter = amount;
+    }
+
+    public String getBudget() {
+        return this.budget.toString();
+    }
+
+    public String getExpenditure() {
+        return centsFormat.format(this.budget.getBudget() - this.budgetCounter);
+    }
+
+    public String getBudgetRemain() {
+        return centsFormat.format(this.budgetCounter);
     }
 
 }

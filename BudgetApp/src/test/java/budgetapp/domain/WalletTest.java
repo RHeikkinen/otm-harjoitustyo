@@ -1,3 +1,5 @@
+package budgetapp.domain;
+
 import budgetapp.domain.Wallet;
 import org.junit.After;
 import org.junit.AfterClass;
