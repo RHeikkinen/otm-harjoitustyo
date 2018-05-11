@@ -21,7 +21,7 @@ public class Wallet {
     public double getBalance() {
         return this.balance;
     }
-    
+
     public void setBalance(double amount) {
         this.balance = amount;
     }
@@ -31,21 +31,23 @@ public class Wallet {
             return;
         }
         this.balance += amount;
-        this.transactions.add(new Transaction(amount, "+"));
+        this.transactions.add(new Transaction(amount, "-"));
     }
-    
+
     public void withdraw(double amount) {
         if (amount < 0) {
             return;
         }
         this.balance -= amount;
+        this.transactions.add(new Transaction(amount, "+"));
+
     }
 
     @Override
     public String toString() {
         return CENTS_FORMAT.format(balance);
     }
-    
+
     public void getTransactions() {
         transactions.forEach((t) -> {
             System.out.println(t.toString());
@@ -56,5 +58,5 @@ public class Wallet {
         this.balance = 0;
         this.transactions.clear();
     }
- 
+
 }
